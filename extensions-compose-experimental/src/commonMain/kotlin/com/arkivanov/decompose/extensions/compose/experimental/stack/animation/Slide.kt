@@ -15,7 +15,7 @@ fun slide(
     animationSpec: FiniteAnimationSpec<Float> = tween(),
     orientation: Orientation = Orientation.Horizontal,
     reverseDirection: Boolean = false,
-    ): StackAnimator =
+): StackAnimator =
     stackAnimator(animationSpec = animationSpec) { factor, _ ->
         when (orientation) {
             Orientation.Horizontal -> Modifier.offsetXFactor(factor = factor, reverseDirection = reverseDirection)
